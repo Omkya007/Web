@@ -600,50 +600,36 @@ let postsArr = [
         "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
     }
 ]
-const cl=console.log;
 
-// let info=document.getElementById("info");
-// cl(postsArr);
 
-// let result=``;
+const cl = console.log;
 
-// for(let i=0;i<postsArr.length;i++){
-//     result+=`<div class="col-md-4 mb-4">
-//     <div class="card Card">
-//         <div class="card-header">
-//             <h3 class="m-0">${postsArr[i].title}</h3>
-//         </div>
-//         <div class="card-body">
-//             <p>${postsArr[i].body}</p>
-//         </div>
-//         <div class="card-footer d-flex justify-content-between">
-//             <button class="btn btn-primary">Edit </button>
-//             <button class="btn btn-danger">Delete </button>
-//         </div>
-//     </div>
-// </div>`
-// }
-// cl(result);
-// info.innerHTML=result;
+const postslist = document.getElementById("postscontainer");
+cl(postsArr);
 
-let info1=document.getElementById("info1");
-let result1=``;
+
+let result = " ";
 
 postsArr.forEach(ele=>{
-    result1+=`<div class="col-md-4 mb-4">
-    <div class="card Card">
+	result +=` <div class="col-4 md-4 mb-4">
+    <div class="card postcard">
         <div class="card-header">
             <h3 class="m-0">${ele.title}</h3>
         </div>
         <div class="card-body">
-            <p>${ele.body}</p>
+            <p class="m-0">${ele.body}</p>
         </div>
         <div class="card-footer d-flex justify-content-between">
-            <button class="btn btn-primary">Edit </button>
-            <button class="btn btn-danger">Delete </button>
+        <button type="button" class="btn btn-primary">Edit</button>
+        <button type="button" class="btn btn-danger">delete</button>
         </div>
     </div>
-</div>`;
+</div>`
+	
 });
-cl(result1);
-info1.innerHTML=result1;
+
+postslist.innerHTML = result;
+
+
+
+
