@@ -55,7 +55,7 @@ info1.innerHTML=skills;
 
 
 for(var i=0;i<skills.length;i++){
-    cl(skills[i]);
+    document.write(skills[i]);
 }
 
 // Array Methods
@@ -77,6 +77,7 @@ cl(str2);
 var str3=array.join(" ");
 cl(str3);
 
+
 // toString 
 
 var str4=array.toString();
@@ -85,6 +86,7 @@ cl(str4);
 // pop
 var str5=array.pop();
 cl(str5);
+cl(array)
 
 var str6=array.pop();
 cl(str6);

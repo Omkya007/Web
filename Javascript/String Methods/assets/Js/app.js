@@ -69,12 +69,12 @@ cl(s20);
 // slice
 
 var a="How many are there in an box";
-// var b=a.slice(1,5);
-var b=a.slice(2,8);
-cl(b);
+var ab=a.slice(1,5);
+//var b=a.slice(2,8);
+cl(ab);
 
 var a1="Hi whatsapp how's going on";
-var b1=a1.slice(3,5);
+var b1=a1.slice(-3,-5);
 cl(b1);
 
 var a2="Hey Are You a frontend Developer";

@@ -3,7 +3,7 @@ const cl=console.log;
 const username=document.getElementById("username")
 const bgColor=document.getElementById("bgColor")
 
-// const body=document.getElementById("")
+const body=document.querySelector("body")
 
 
 const onblur=(eve)=>{
