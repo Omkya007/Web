@@ -137,7 +137,7 @@ const onRemove = (ele) =>{
     cl(getConfirmmation) //confirm returns boolean
     if(getConfirmmation){
         let removeId=ele.closest('tr').id //get the closest tr with id which has to be removed
-,egm
+
         let getIndex=stdArr.findIndex(std => std.stdId === removeId); //get the index no of object to be deleted
         stdArr.splice(getIndex,1) //splice deleted the object present at that index 
         localStorage.setItem('stdArr',JSON.stringify(stdArr)); // update the localstorage

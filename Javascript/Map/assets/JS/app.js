@@ -8,7 +8,15 @@ let num=nums.map(numr=>{
 })
 cl(num);
 
+let numus=nums.map(ele=>{
+    return ele+ele;
+})
+cl(numus);
 
+let n=nums.map(ele=>{
+    return ele/ele;
+})
+cl(n);
 
 let sqrt=nums.map((ele)=>{
     return Math.sqrt(ele);
@@ -43,6 +51,11 @@ companies = [
    comp1.push( comp.name);
  })
  cl(comp1);
+
+ let compa=companies.map(ele=>{
+    return ele.name
+ })
+ cl(compa);
 
  let comp2=companies.map(comp=>{
     return comp.name;
@@ -83,6 +96,14 @@ let compn2=companies.map(comp=>{
     }
 })
 cl(compn2);
+
+let Compcat=companies.map(ele=>{
+    return obj={
+        compname:ele.name,
+        compcat:ele.category
+    }
+})
+cl(Compcat);
 
 
 // Complifespan :1978-2003 ,Compname:name
